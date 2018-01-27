@@ -1,21 +1,9 @@
 # ExTed
 
-**TODO: Add description**
+ExTed is a naive implementation of a tree edit distance algorithm in Elixir. Please note that this algorithm has exponential runtime complexity!
 
-## Installation
+Trees consist of a label and children: ```{:label, [], [child_1, ..., child_n]}```
+The second value in the tuple is not used yet and only existent to be compatible with Elixir syntax trees.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `exted` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:exted, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/exted](https://hexdocs.pm/exted).
-
+## Usage
+```Ted.ted(tree_1, tree_2)```
